@@ -1,0 +1,14 @@
+PART 1 - server data with polynomial models of different degree
+degree 1: RMSE=18.83 ms | prediction at 400 users = 312.9 ms
+degree 2: RMSE=1.55 ms | prediction at 400 users = 377.9 ms
+degree 3: RMSE=0.14 ms | prediction at 400 users = 387.9 ms
+degree 5: RMSE=0.14 ms | prediction at 400 users = 389.4 ms
+Higher degree always lowers RMSE on the data, but extrapolation (400 users) becomes less trustworthy.
+
+PART 2 - maize yield vs fertilizer
+Quadratic: y = -0.000141x^2 + 0.03714x + 1.788 | RMSE=0.018 t/ha
+Saturating: y = 1.752 + (4.519-1.752)(1-exp(-0.0168x)) | RMSE=0.072 t/ha
+Parameter standard errors (saturating): [0.1471 0.0024 0.0913]
+Quadratic peak at 132 kg/ha (yield 4.24 t/ha)
+Prediction at 175 kg/ha: quadratic=3.97, saturating=4.37 t/ha
+Prediction at 200 kg/ha: quadratic=3.58, saturating=4.42 t/ha

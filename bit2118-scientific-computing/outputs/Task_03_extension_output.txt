@@ -1,0 +1,10 @@
+PART 1 - effect of changing N (number of latency values)
+N=   10,000: loop=0.0014s vectorized=0.00003s speed-up=49x
+N=1,000,000: loop=0.1643s vectorized=0.00188s speed-up=87x
+N=5,000,000: loop=0.8053s vectorized=0.01313s speed-up=61x
+
+PART 2 - transaction fees for 1,000,000 simulated transactions
+Total value moved: KES 1,144,857,668  (USD 8,874,866)
+Total fees: KES 16,146,340  | average fee: KES 16.15 | effective rate 1.410%
+Median transaction: KES 493 | 95th percentile: KES 4,166
+Loop 0.113s vs vectorized 0.0172s -> 7x faster

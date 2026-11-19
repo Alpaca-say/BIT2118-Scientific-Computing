@@ -1,0 +1,17 @@
+PART 1 - original vs. network with extra link A-D
+original: lambda=2.5616, centrality=[0.2192 0.2808 0.2808 0.2192]
+A-D added: lambda=3.0000, centrality=[0.25 0.25 0.25 0.25]  (complete graph K4 -> lambda=3, all equal)
+
+PART 2 - road network, dominant eigenvalue = 2.9139
+Town       degree  eigenvector-centrality
+Nairobi        5   0.2069
+Nakuru         4   0.1821
+Naivasha       2   0.1335
+Mombasa        2   0.1081
+Machakos       2   0.1081
+Eldoret        2   0.0952
+Kisumu         2   0.0952
+Nyeri          1   0.0710
+
+Without Nairobi the network splits into 3 disconnected groups (graph Laplacian has that many zero eigenvalues).
+Verification ||Gv - lambda v|| = 1.5263043145882805e-15

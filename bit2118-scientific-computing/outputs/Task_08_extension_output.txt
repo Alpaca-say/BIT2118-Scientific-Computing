@@ -1,0 +1,10 @@
+PART 1 - original 5-node model
+left=100 tol=1e-08: Jacobi 150 it, Gauss-Seidel 75 it, max |x_J - exact| = 3.41e-08
+left=150 tol=1e-08: Jacobi 152 it, Gauss-Seidel 76 it, max |x_J - exact| = 3.62e-08
+left=100 tol=0.001: Jacobi 70 it, Gauss-Seidel 35 it, max |x_J - exact| = 3.39e-03
+Non-dominant matrix after 50 Jacobi steps: last change = 4.77e+26 (diverges)
+
+PART 2 - 50-node rod, hot end 180 C, cold end 25 C
+Jacobi iterations: 9265 | Gauss-Seidel iterations: 4659
+Max error Jacobi: 3.00e-06 | Gauss-Seidel: 2.62e-06
+Temperature at nodes 1, 10, 25, 40, 50: [176.96 149.61 104.02  58.43  28.04]

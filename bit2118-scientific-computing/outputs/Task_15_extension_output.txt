@@ -1,0 +1,16 @@
+PART 1 - derivative of f(x)=sin(x) at x=1 (true value cos(1)=0.5403023059)
+h=1e-01: forward error=4.29e-02  central error=9.00e-04
+h=1e-02: forward error=4.22e-03  central error=9.00e-06
+h=1e-04: forward error=4.21e-05  central error=9.00e-10
+h=1e-06: forward error=4.21e-07  central error=2.77e-11
+h=1e-08: forward error=2.97e-09  central error=2.58e-09
+h=1e-10: forward error=5.85e-08  central error=5.85e-08
+h=1e-13: forward error=7.34e-04  central error=1.79e-04
+Error falls as h shrinks, then rises again for very small h because of round-off (Task 4 idea).
+
+PART 2 - matatu trip, speed limit 80 km/h
+Max estimated speed: 88.3 km/h at t=80 s | true max 93.6 km/h
+Times above limit (s): [75.0, 80.0]
+Max acceleration 0.57 m/s^2, max braking -0.82 m/s^2
+Harsh-braking instants (< -1.5 m/s^2): []
+Average speed from total distance: 49.5 km/h over 1.65 km

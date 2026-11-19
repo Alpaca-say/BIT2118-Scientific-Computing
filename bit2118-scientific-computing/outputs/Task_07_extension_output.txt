@@ -1,0 +1,22 @@
+PART 1a - changing b: scaling b by 2 doubles x (linearity)
+b   -> [5. 5. 5.]
+2*b -> [10. 10. 10.]
+
+PART 1b - cost: factor once vs solve from scratch, n=600, 400 right-hand sides
+solve each time: 1.741s | LU once + 400 solves: 0.068s | speed-up 25.6x
+
+PART 2 - hour, source current (A), node voltages (V)
+06:00  I= 0.00  V=[-0.017 -0.052 -0.109 -0.305]  residual=7.9e-17
+07:00  I= 2.59  V=[ 0.964  0.305  0.069 -0.215]  residual=2.3e-16
+08:00  I= 5.00  V=[ 1.879  0.638  0.236 -0.132]  residual=8.9e-16
+09:00  I= 7.07  V=[ 2.665  0.924  0.378 -0.061]  residual=5.6e-17
+10:00  I= 8.66  V=[ 3.268  1.143  0.488 -0.006]  residual=2.2e-16
+11:00  I= 9.66  V=[3.647 1.281 0.557 0.028]  residual=1.8e-15
+12:00  I=10.00  V=[3.776 1.328 0.58  0.04 ]  residual=4.5e-16
+13:00  I= 9.66  V=[3.647 1.281 0.557 0.028]  residual=1.8e-15
+14:00  I= 8.66  V=[ 3.268  1.143  0.488 -0.006]  residual=5.6e-17
+15:00  I= 7.07  V=[ 2.665  0.924  0.378 -0.061]  residual=8.9e-16
+16:00  I= 5.00  V=[ 1.879  0.638  0.236 -0.132]  residual=8.9e-16
+17:00  I= 2.59  V=[ 0.964  0.305  0.069 -0.215]  residual=0.0e+00
+18:00  I= 0.00  V=[-0.017 -0.052 -0.109 -0.305]  residual=1.0e-17
+G is symmetric positive definite: True

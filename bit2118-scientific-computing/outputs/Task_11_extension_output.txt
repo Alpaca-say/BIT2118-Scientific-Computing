@@ -1,0 +1,15 @@
+PART 1 - investment project (inflows 3000, 3500, 4000, 2500)
+initial investment -10000: IRR = 11.5425% (Newton, 4 iterations)
+initial investment -12000: IRR = 3.3298% (Newton, 5 iterations)
+initial investment -8000: IRR = 22.9604% (Newton, 6 iterations)
+starting guess 0.0: IRR=11.5425% after 6 iterations
+starting guess 0.5: IRR=11.5425% after 8 iterations
+starting guess 2.0: FAILED - Newton jumped to a useless region (rate below -100%)
+
+PART 2 - loan of KES 120,000, 12 x KES 11,500
+Monthly rate (Newton): 2.2185% in 4 iterations
+Monthly rate (Secant): 2.2185% in 6 iterations
+Nominal annual rate (x12): 26.62% | effective annual rate: 30.12%
+Total repaid KES 138,000 -> total interest KES 18,000 (15.0% of the loan)
+NPV at solution: 0.000000
+With a 3% upfront fee: monthly 2.7212%, effective annual 38.01%

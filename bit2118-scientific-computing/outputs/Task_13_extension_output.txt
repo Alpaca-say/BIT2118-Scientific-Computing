@@ -1,0 +1,11 @@
+PART 1 - original data vs data with the 11:00 value missing, estimate at 10:30 and 11:00
+all points : linear(10.5)=23.25 cubic(10.5)=23.36 | linear(11)=24.00 cubic(11)=24.00  (measured 24.00)
+no 11:00   : linear(10.5)=23.12 cubic(10.5)=23.43 | linear(11)=23.75 cubic(11)=24.11  (measured 24.00)
+
+PART 2 - interpolation error vs the true clear-day curve (kW)
+sampling every 1 h: max error linear=0.0424  cubic=0.0002  | RMSE linear=0.0221 cubic=0.0001
+sampling every 2 h: max error linear=0.1646  cubic=0.0054  | RMSE linear=0.0879 cubic=0.0024
+sampling every 3 h: max error linear=0.3519  cubic=0.0354  | RMSE linear=0.1963 cubic=0.0186
+At 12:30 with 2-hourly data: true=4.957  linear=4.833  cubic=4.957
+Asking for 19:00 (outside data range) -> ValueError (interp1d refuses to extrapolate)
+CubicSpline extrapolates silently to 19:00: -1.328 kW (true value is 0 -> misleading)

@@ -1,0 +1,12 @@
+PART 1 - RC circuit: changing the resistance (Vs=5 V, C=1 mF)
+R=  1000 ohm: tau=1.000 s | V(1 s)=3.161 V | V(5 s)=4.966 V | time to 63% ~ 1.01 s | max err=9.3e-10
+R=  4700 ohm: tau=4.700 s | V(1 s)=0.958 V | V(5 s)=3.274 V | time to 63% ~ 4.70 s | max err=4.5e-10
+R=   220 ohm: tau=0.220 s | V(1 s)=4.947 V | V(5 s)=5.000 V | time to 63% ~ 0.23 s | max err=9.7e-10
+Discharging from 5 V through 1 kohm: V at 0,1,2,5 s = [5.    1.841 0.677 0.034]
+
+PART 2 - SIR outbreak (N=1,000,000)
+beta=0.30 (R0=3.0): peak infectious=300,231 on day 61; total infected by day 365=94.0%; conservation check max |S+I+R-N|=9.3e-10
+beta=0.20 (R0=2.0): peak infectious=153,418 on day 114; total infected by day 365=79.7%; conservation check max |S+I+R-N|=5.8e-10
+beta=0.15 (R0=1.5): peak infectious=63,026 on day 207; total infected by day 365=58.1%; conservation check max |S+I+R-N|=4.7e-10
+With R0 = 1.5 (beta=0.15) the outbreak is smaller and later, 'flattening the curve'.
+With 40% initially immune (beta=0.30): peak infectious=70,740; herd-immunity threshold 1-1/R0 = 66.7%

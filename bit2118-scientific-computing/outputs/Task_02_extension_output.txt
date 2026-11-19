@@ -1,0 +1,10 @@
+PART 1 - changing the 12:00 reading from 29.4 C to 38.0 C
+original  mean=23.12  min=17.50  max=29.40  median=22.75  std=4.17
+changed   mean=23.48  min=17.50  max=38.00  median=22.75  std=4.99
+
+PART 2 - greenhouse, array shape: (3, 24)
+Per-sensor mean (C): [23.84 25.77 23.  ]
+Per-hour mean across sensors, first 6: [17.17 16.72 15.9  16.09 17.18 18.47]
+Hours above 30 C per sensor: [5 7 4]
+Sensor 1 max in Fahrenheit: 89.6
+Largest deviation: sensor 2 at 13:00 differs by 11.2 C (suspected fault)

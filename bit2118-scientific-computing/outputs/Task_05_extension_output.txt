@@ -1,0 +1,22 @@
+PART 1 - changing parameters on the unit square
+angle= 45 scale=(2,1.5) det= 3.000  point (1,1) -> [0.354 2.475]
+angle= 90 scale=(2,1.5) det= 3.000  point (1,1) -> [-1.5  2. ]
+angle= 45 scale=(1,1) det= 1.000  point (1,1) -> [0.    1.414]
+angle= 45 scale=(2,0) det= 0.000  point (1,1) -> [1.414 1.414]
+scale y = 0 -> det 0 (singular): the square collapses to a line and cannot be inverted.
+
+PART 2 - drone waypoints
+Combined 3x3 matrix:
+ [[  1.0392  -0.6    100.    ]
+ [  0.6      1.0392  50.    ]
+ [  0.       0.       1.    ]]
+Transformed waypoints:
+ [[100.    50.  ]
+ [151.96  80.  ]
+ [139.96 100.78]
+ [ 88.    70.78]
+ [ 76.    91.57]
+ [127.96 121.57]]
+Leg length ratios new/old: [1.2 1.2 1.2 1.2 1.2]
+Round trip error: 1.4210854715202004e-14
+Determinant of 2x2 part: 1.44 (= 1.2^2, area scales by 1.44)

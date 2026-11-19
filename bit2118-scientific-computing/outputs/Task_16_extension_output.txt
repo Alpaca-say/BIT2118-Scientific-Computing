@@ -1,0 +1,14 @@
+PART 1 - smart-meter data
+original: trapezoid=15.700  simpson=15.800 kWh
+06:00 reading 1.8 -> 3.0 kW: trapezoid=18.100  simpson=19.000 kWh
+sin(x) with  3 points: trapezoid error=4.29e-01  simpson error=9.44e-02
+sin(x) with  5 points: trapezoid error=1.04e-01  simpson error=4.56e-03
+sin(x) with  9 points: trapezoid error=2.58e-02  simpson error=2.69e-04
+sin(x) with 17 points: trapezoid error=6.43e-03  simpson error=1.66e-05
+
+PART 2 - estate water volume over 24 h
+Trapezoid: 266.90 m^3 | Simpson: 266.99 m^3 | adaptive quad (reference): 266.91 m^3
+Errors: trapezoid 0.005 m^3, Simpson 0.087 m^3
+Estimated daily cost at KES 130/m^3: KES 34,709
+Peak flow 6.00 L/s at 19:00
+Share of daily water used between 17:00 and 21:00: 26.6%

@@ -1,0 +1,19 @@
+PART 1 - server overload, N = 100,000 unless stated (exact normal value in brackets)
+cap=1000 sd=120 N=100,000 seed=42: estimate=10.6160% (theory 10.5650%), standard error=0.0974%
+cap=1000 sd=200 N=100,000 seed=42: estimate=22.6020% (theory 22.6627%), standard error=0.1323%
+cap=1100 sd=120 N=100,000 seed=42: estimate=1.9120% (theory 1.8610%), standard error=0.0433%
+cap=1000 sd=120 N=    100 seed=1: estimate=3.0000% (theory 10.5650%), standard error=1.7059%
+cap=1000 sd=120 N=    100 seed=2: estimate=8.0000% (theory 10.5650%), standard error=2.7129%
+cap=1000 sd=120 N=    100 seed=3: estimate=9.0000% (theory 10.5650%), standard error=2.8618%
+Small N gives noisy answers that change with the seed; larger N or a different mean/sd shifts the risk.
+
+PART 2 - agent cash float simulation, 200,000 simulated days
+P(cash runs out at some point in the day) = 0.166%  (95% CI 0.148% to 0.183%)
+Mean closing cash: KES 125,213 | 5th percentile of closing cash: KES 60,031
+opening float KES 100,000: stock-out probability 4.071%
+opening float KES 150,000: stock-out probability 0.166%
+opening float KES 200,000: stock-out probability 0.004%
+opening float KES 250,000: stock-out probability 0.000%
+pi estimate with     1,000 points: 3.22400 (error 0.08241)
+pi estimate with   100,000 points: 3.13972 (error 0.00187)
+pi estimate with 5,000,000 points: 3.14206 (error 0.00046)

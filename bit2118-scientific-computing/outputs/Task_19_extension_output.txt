@@ -1,0 +1,16 @@
+PART 1 - server allocation under different parameters
+cost A=12, B=18, capacity>=1000: continuous A=0.00, B=5.88, cost=105.88 | integer best (cost,A,B)=(108, 0, 6)
+cost A=8, B=18, capacity>=1000: continuous A=10.00, B=0.00, cost=80.00 | integer best (cost,A,B)=(80, 10, 0)
+cost A=12, B=18, capacity>=1500: continuous A=0.00, B=8.82, cost=158.82 | integer best (cost,A,B)=(162, 0, 9)
+cost A=12, B=10, capacity>=1000: continuous A=0.00, B=5.88, cost=58.82 | integer best (cost,A,B)=(60, 0, 6)
+Cost per unit capacity: A=0.120, B=0.106 -> the cheaper capacity wins; the optimum sits at a vertex of the feasible region.
+
+PART 2 - minimum-cost daily food plan
+success: True
+maize flour         :    570 g
+dry beans           :      0 g
+dagaa (small fish)  :     28 g
+cabbage/sukuma      :    200 g
+Energy: 2200 kcal (need 2200) | Protein: 65.0 g (need 65) | Cost: KES 61.71/day
+If dagaa price doubles: dagaa 0 g, beans 100 g, cost KES 65.00/day
+linprog check: cost KES 61.71, amounts (g) [570.   0.  28. 200.]

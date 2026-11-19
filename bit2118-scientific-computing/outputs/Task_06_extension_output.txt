@@ -1,0 +1,13 @@
+PART 1 - changing the observed totals of the server problem
+CPU=20, RAM=72 -> Type A=3.000, Type B=4.000
+CPU=26, RAM=76 -> Type A=5.000, Type B=3.000
+CPU=26, RAM=96 -> Type A=3.750, Type B=5.500
+The last case gives fractional servers, which is physically impossible: the data/assumption is inconsistent.
+det of dependent system: 0.0 (singular - no unique solution)
+
+PART 2 - feed mix (mass, protein, energy rows)
+kg of maize bran, sunflower cake, lucerne hay: [35.14 13.51 51.35]
+Check A@x = [ 100.   17. 1000.]  residual norm = 1.1368683772161603e-13
+Calcium delivered: 678 g in 100 kg  (target 450 g -> OK)
+All amounts non-negative: True
+Condition number of A: 119.6

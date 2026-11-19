@@ -1,0 +1,14 @@
+PART 1 - circle x^2+y^2=R^2 and parabola y=x^2-1
+R=2 guess=[1, 1]: x=[1.5175 1.3028] success=True max residual=2.5e-13
+R=3 guess=[1, 1]: x=[1.8364 2.3723] success=True max residual=1.5e-12
+R=3 guess=[2, 2]: x=[1.8364 2.3723] success=True max residual=4.8e-12
+R=0.5 guess=[1, 1]: x=[ 0.5005 -0.4997] success=False max residual=2.5e-01
+R=2 guess=[0, -3]: x=[-0.0068 -1.9421] success=False max residual=9.4e-01
+R=0.5: the parabola never reaches the small circle, so no real intersection exists even though a solver returns a point.
+Analytic y for R=2: [-2.3028  1.3028] (the negative root gives x^2<0 -> not real)
+
+PART 2 - phone location from two towers
+guess=[3, 3]: position=(3.7500, 3.3072) km, residuals=[0. 0.], success=True
+guess=[3, -3]: position=(3.7500, -3.3072) km, residuals=[0. 0.], success=True
+Analytic check: x=3.7500, y=+/-3.3072
+Distance from T3 at (3,6) km to the two candidates: 2.795 km vs 9.337 km -> a third range measurement picks the correct one.

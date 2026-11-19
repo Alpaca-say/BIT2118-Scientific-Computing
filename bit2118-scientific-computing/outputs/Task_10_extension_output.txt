@@ -1,0 +1,15 @@
+PART 1 - heat-balance problem
+bracket=[20, 40] xtol=1e-10: root=27.525211, iterations=38
+bracket=[0, 100] xtol=1e-10: root=27.525211, iterations=40
+bracket=[20, 40] xtol=0.001: root=27.525024, iterations=15
+fixed point from T0=30.0: 27.525211 in 13 iterations
+fixed point from T0=10.0: 27.525211 in 14 iterations
+fixed point from T0=100.0: 27.525211 in 14 iterations
+bad rearrangement x=2x-f(x) after 10 steps -> 3261.168 (moves away from 27.53)
+
+PART 2 - break-even analysis
+Lower break-even: 57.43 units (bisection, 40 iterations)
+Upper break-even: 11609.24 units (bisection, 44 iterations)
+Maximum profit at q = 5833: KES 1,000,833
+Profit is positive only between the two break-even points.
+Fixed-point (q=(20000+0.03q^2)/350) lower break-even: 57.4255 in 7 iterations

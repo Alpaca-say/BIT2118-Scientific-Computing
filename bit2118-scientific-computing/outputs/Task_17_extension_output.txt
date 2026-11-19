@@ -1,0 +1,16 @@
+PART 1 - cooling problem, final error at t=30 for different h
+h=5.0  : Euler=25.2662  exact=26.7760  error=1.50980
+h=1.0  : Euler=26.4041  exact=26.7760  error=0.37196
+h=0.1  : Euler=26.7378  exact=26.7760  error=0.03825
+h=0.01 : Euler=26.7722  exact=26.7760  error=0.00384
+Halving h roughly halves the error (Euler is first-order).
+Stability: h*k > 2 makes Euler oscillate and blow up
+h=10, k=0.12, hk=1.2: Euler values [90.  12.  27.6 24.5 25.1] (exact tends to 25)
+h=20, k=0.12, hk=2.4: Euler values [  90.   -66.   152.4 -153.4  274.7] (exact tends to 25)
+
+PART 2 - logistic adoption, users in millions
+h=2.0 : P(10 years) = 40.941 M | exact 39.614 M | max error 19.487 M
+h=1.0 : P(10 years) = 39.847 M | exact 39.614 M | max error 11.824 M
+h=0.25: P(10 years) = 39.632 M | exact 39.614 M | max error 3.304 M
+Exact time to reach 50% saturation (20 M users): 4.85 years
+Euler (h=0.01) first time above 20 M: 4.87 years
