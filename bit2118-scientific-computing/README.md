@@ -2,7 +2,7 @@
 
 OMARE LEVI
 BSCCS/2024/56230
-GROUP !*
+GROUP 18
 
 This repository contains my individual submission for the Scientific Computing group work (Tasks 2–20). For every task it contains:
 
