@@ -1,12 +1,14 @@
-# BIT 2118 Scientific Computing – Group Work (Individual Repository)
+ BIT 2118 Scientific Computing – Group Work
 
-**Student:** _your name_ · **Reg. No.:** _your registration number_ · **Group:** _your group_
+OMARE LEVI
+BSCCS/2024/56230
+GROUP !*
 
-This repository contains my individual submission for the Scientific Computing group work (Tasks 2–20). For **every task** it contains:
+This repository contains my individual submission for the Scientific Computing group work (Tasks 2–20). For every task it contains:
 
-1. the **original program** from the brief (`code/Task_XX_*.py`), run and its output saved;
-2. an **extension program** (`code/Task_XX_extension.py`) that (a) changes at least one input/parameter and (b) solves a **different but related real-world case**;
-3. a **write-up** (`docs/Task_XX_*.md`) covering the brief's requirements B–E:
+1. the original program from the brief (`code/Task_XX_*.py`), run and its output saved;
+2. an extension program (`code/Task_XX_extension.py`) that (a) changes at least one input/parameter and (b) solves a different but related real-world case;
+3. a write-up (`docs/Task_XX_*.md`) covering the brief's requirements B–E:
    - **B** – input values and the mathematical operation,
    - **C** – change in an input/parameter and how the result changes,
    - **D** – the output explained in words, with graph interpretation,
@@ -24,14 +26,6 @@ run_all.sh  re-runs everything
 requirements.txt
 ```
 
-## How to run
-```bash
-python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-./run_all.sh                     # or: cd code && python Task_02_numpy_arrays.py
-```
-Requires Python 3.9+ and NumPy ≥ 2.0 (`np.trapezoid` in Task 16; on older NumPy use `np.trapz`). Scripts save figures to `../figures`, so run them from inside `code/`. Timing results (Tasks 3 and 7) differ slightly from computer to computer; everything else is reproducible because random generators use fixed seeds.
 
 ## Task index
 | Task | Topic | Real-world case added | Write-up |
